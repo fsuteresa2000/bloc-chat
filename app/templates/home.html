@@ -1,1 +1,18 @@
-<h1>Home Page</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bloc-Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+    <section id="sidebar">
+        <h1>Bloc Chat</h1>
+        <div>
+          <ul>
+              <li ng-repeat="room in home.rooms">
+                {{room.name}}
+              </li>
+            </ul>
+          </div>
+        </section>
+</html>
