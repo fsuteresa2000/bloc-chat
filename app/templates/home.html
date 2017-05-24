@@ -5,10 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
-    <div class="room-nav">
-        <h1>Bloc Chat</h1>
-        <span class="new-room-button" type="button" ng-click="home.addRoom()">New Room</span>
-        <div ng-repeat="room in home.rooms">
-        <h3>{{ room.name }}</h3>
+    <div class="sidebar">
+        <div class ="sidebar-header">
+        <h1 class="sidebar-title">Bloc Chat</h1>
+        <span class="new-room-button" type="button" ng-click="home.addRoom()">New Room</button>
     </div>
-</div>
+    <div class="sidebar-body" ng-repeat="room in home.rooms">
+        <p class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</p>
+    </div>
+    </div>
+
+    <div class="messages">
+    <div class="messages-header">
+        <h3>{{ home.currentRoom.name }}</h3>
+    </div>
+    <div class="messages-body" ng-repeat="message in home.messages">
+        <div class="username">{{ message.username }}</div>
+        <div class="timestamp">{{ message.sentAt | date : "shortTime" }}</div>
+        <div class="user-message">{{ message.content }}</div>
+    </div>
+  </div>
+</html>
