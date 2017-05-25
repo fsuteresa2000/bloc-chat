@@ -19,10 +19,14 @@
     <div class="messages-header">
         <h3>{{ home.currentRoom.name }}</h3>
     </div>
-    <div class="messages-body" ng-repeat="message in home.messages">
+    <div class="messages-body" ng-repeat="message in home.currentMessages">
         <div class="username">{{ message.username }}</div>
         <div class="timestamp">{{ message.sentAt | date : "shortTime" }}</div>
         <div class="user-message">{{ message.content }}</div>
     </div>
+    <div class="message-field">
+       <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="newMessage" style="width:800px;">
+       <button class="btn-new-message" type="button" ng-click="home.sendMessage(newMessage)">Send message</button>
+   </div>
   </div>
 </html>

@@ -47,7 +47,7 @@ html {
 
 .new-room-button {
      color: white;
-     background: #316B6B;
+     background: #554971;
      padding: 15px 20px;
      margin: 15px;
      font-family: Raleway, 'OpenSansBold', sans-serif;
@@ -60,18 +60,18 @@ html {
      float: right;
      text-align: center;
      cursor: pointer;
-     box-shadow: inset 0 0 0 0 #95D8D8;
+     box-shadow: inset 0 0 0 0 #63768D;
  	-webkit-transition: all ease 0.8s;
  	-moz-transition: all ease 0.8s;
  	transition: all ease 0.8s;
  }
 
  .new-room-button:hover {
-     box-shadow: inset 0 100px 0 0 #E0F4F4;
+     box-shadow: inset 0 100px 0 0 #A29BB1;
 }
 
 .modal-box {
-  background-color: #77CDCD;
+  background-color: #554971;
 }
 
 .modal-box .modal-title {
@@ -97,6 +97,9 @@ html {
     overflow: scroll;
 }
 
+.messages-header {
+    color: #59C3C3;
+}
 .messages-body {
     padding-right: 10px;
     padding-left: 20px;
