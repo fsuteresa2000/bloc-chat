@@ -76,8 +76,14 @@ html {
 
 .modal-box .modal-title {
     color: white;
+    text-align: center;
 }
 
+.modal-box .modal-text {
+    color: #DAE3E3;
+    text-align: center;
+    font-size: 18px;
+}
 .modal-box .modal-prompt {
     color: white;
 }
